@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad-portrait" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5E2DC"/>
+      <stop offset="100%" stop-color="#D5D0C6"/>
+    </linearGradient>
+    <pattern id="grid-photo" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#CCC7BD" stroke-width="0.8" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="480" fill="url(#grad-portrait)"/>
+  <rect width="400" height="480" fill="url(#grid-photo)"/>
+  
+  <!-- Minimalist Stylized Silhouette of Designer -->
+  <circle cx="200" cy="180" r="70" fill="#111111" opacity="0.85"/>
+  <path d="M 90 410 C 90 280, 310 280, 310 410 Z" fill="#111111" opacity="0.85"/>
+  
+  <!-- Glasses / Creative Accents -->
+  <rect x="160" y="165" width="32" height="20" rx="3" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <rect x="208" y="165" width="32" height="20" rx="3" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="192" y1="175" x2="208" y2="175" stroke="#FFFFFF" stroke-width="3"/>
+  
+  <!-- Camera / Upload Overlay Prompt -->
+  <rect x="50" y="420" width="300" height="34" rx="4" fill="rgba(17, 17, 17, 0.9)"/>
+  <text x="200" y="442" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PHOTO PLACEHOLDER / UPLOAD</text>
+  
+  <!-- Crosshairs -->
+  <path d="M 20 20 L 40 20 M 20 20 L 20 40" stroke="#111111" stroke-width="2"/>
+  <path d="M 380 20 L 360 20 M 380 20 L 380 40" stroke="#111111" stroke-width="2"/>
+  <path d="M 20 460 L 40 460 M 20 460 L 20 440" stroke="#111111" stroke-width="2"/>
+  <path d="M 380 460 L 360 460 M 380 460 L 380 440" stroke="#111111" stroke-width="2"/>
+</svg>

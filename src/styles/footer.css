@@ -1,0 +1,125 @@
+/* Footer Styles */
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Primary Footer inside Red Theme */
+.footer-main {
+  background-color: var(--red);
+  color: var(--white);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 32px 0 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-title {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.footer-role {
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.06em;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.04em;
+}
+
+.back-to-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  padding: 4px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all var(--transition-fast);
+}
+
+.back-to-top-btn:hover {
+  border-bottom-color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Archival Bottom Strip */
+.footer-archival-strip {
+  background-color: var(--off-white);
+  border-top: 1px solid var(--border-subtle);
+  padding: 10px 0;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--mid-gray);
+}
+
+.archival-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.archival-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.archival-dot {
+  color: var(--red);
+}
+
+.archival-right {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .archival-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .archival-right {
+    text-align: left;
+  }
+}

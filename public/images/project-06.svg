@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#18181A"/>
+  
+  <!-- Subtle scanline / film frame -->
+  <line x1="40" y1="64" x2="760" y2="64" stroke="#2B2B30" stroke-width="1"/>
+  <line x1="40" y1="536" x2="760" y2="536" stroke="#2B2B30" stroke-width="1"/>
+
+  <!-- Header metadata -->
+  <circle cx="44" cy="44" r="4.5" fill="#D20F1B"/>
+  <text x="58" y="48" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#8E8E98" letter-spacing="1.5">ULTRA-WIDE // 21:9 // 60FPS</text>
+  <text x="756" y="48" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#D20F1B" text-anchor="end" letter-spacing="1.5">REC ● 24FPS</text>
+
+  <!-- Large Center Play Icon Pill -->
+  <circle cx="400" cy="290" r="46" fill="#24242A" stroke="#3E3E48" stroke-width="2"/>
+  <polygon points="392,274 416,290 392,306" fill="#FFFFFF"/>
+
+  <!-- Title overlay -->
+  <text x="400" y="375" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">CONCRETE GRID MOTION</text>
+  <text x="400" y="402" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="500" fill="#888892" text-anchor="middle" letter-spacing="1.2">EXPERIMENTAL 3D / AUDIO</text>
+
+  <!-- Bottom timecode badge -->
+  <text x="44" y="558" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="500" fill="#77777E" letter-spacing="1">TIMECODE // 00:00:00:00</text>
+  <rect x="696" y="542" width="60" height="22" rx="3" fill="#2E2E36"/>
+  <text x="726" y="557" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">00:58</text>
+</svg>

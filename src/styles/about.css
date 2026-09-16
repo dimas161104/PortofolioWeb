@@ -1,0 +1,275 @@
+/* About Section Styles */
+.about-section {
+  padding: clamp(60px, 8vw, 110px) 0;
+  background-color: var(--off-white);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.about-header-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(20px, 3vw, 28px);
+}
+
+.about-sublabel {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--mid-gray);
+  text-transform: uppercase;
+}
+
+.about-main-title {
+  max-width: 1050px;
+  margin-bottom: clamp(40px, 6vw, 70px);
+}
+
+/* Two-Column Editorial Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(36px, 6vw, 80px);
+  align-items: flex-start;
+}
+
+/* Left Column */
+.about-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-paragraph {
+  font-size: clamp(0.9375rem, 1.25vw, 1.0625rem);
+  line-height: 1.68;
+  color: var(--dark-gray);
+}
+
+/* Philosophy Callout Card */
+.philosophy-card {
+  margin-top: 24px;
+  padding: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--black);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-smooth), transform var(--transition-smooth);
+  will-change: transform;
+}
+
+.philosophy-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transform: translateY(-3px);
+}
+
+.philosophy-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--mid-gray);
+  margin-bottom: 10px;
+}
+
+.philosophy-quote {
+  font-family: var(--font-sans);
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--black);
+}
+
+/* Right Column */
+.about-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+/* 3 Identity Mini Cards */
+.identity-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.identity-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-normal);
+  will-change: transform;
+}
+
+.identity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.07);
+  border-color: var(--black);
+}
+
+.identity-card-label {
+  font-size: 0.5625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--mid-gray);
+  margin-bottom: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.identity-card-lines {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--black);
+  letter-spacing: -0.01em;
+}
+
+.identity-line.text-red {
+  color: var(--red);
+}
+
+.identity-card-institution {
+  font-size: 0.625rem;
+  color: var(--gray);
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+/* Experience Track Record */
+.experience-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.experience-header {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--mid-gray);
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-item {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-item-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.experience-role {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: -0.01em;
+}
+
+.experience-period {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--mid-gray);
+  white-space: nowrap;
+}
+
+.experience-description {
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--dark-gray);
+}
+
+/* Competency Matrix Skills */
+.skills-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skills-header {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--mid-gray);
+  text-transform: uppercase;
+}
+
+.skills-tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--black);
+  transition: all var(--transition-fast);
+}
+
+.skill-tag:hover {
+  border-color: var(--red);
+  color: var(--red);
+  transform: translateY(-1px);
+}
+
+.skill-dot {
+  color: var(--red);
+  font-size: 0.875rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .identity-cards-row {
+    grid-template-columns: 1fr;
+  }
+  .identity-card {
+    min-height: auto;
+  }
+}

@@ -1,0 +1,76 @@
+/* InfoBar Styles */
+.infobar-section {
+  background-color: var(--off-white);
+  padding: 36px 0 0 0;
+}
+
+.infobar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding-bottom: 36px;
+}
+
+.infobar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+/* Subtle separator between columns on desktop */
+.infobar-col:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: -12px;
+  height: 80%;
+  width: 1px;
+  background-color: var(--border-subtle);
+}
+
+.infobar-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--mid-gray);
+  text-transform: uppercase;
+}
+
+.infobar-value {
+  font-family: var(--font-sans);
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
+  font-weight: 800;
+  color: var(--black);
+  letter-spacing: -0.01em;
+}
+
+.infobar-value.text-red {
+  color: var(--red);
+}
+
+.infobar-detail {
+  font-size: 0.75rem;
+  color: var(--gray);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 900px) {
+  .infobar-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+  .infobar-col:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .infobar-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .infobar-col::after {
+    display: none !important;
+  }
+}
