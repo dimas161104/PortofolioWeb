@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import InfoBar from './components/InfoBar';
 import About from './components/About';
 import DesignClients from './components/DesignClients';
+import LogoDesign from './components/LogoDesign';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -16,7 +17,7 @@ export default function App() {
 
   // IntersectionObserver to dynamically highlight current section in navigation
   useEffect(() => {
-    const sectionIds = ['hero', 'about', 'design', 'portfolio', 'contact'];
+    const sectionIds = ['hero', 'about', 'design', 'logos', 'portfolio', 'contact'];
     const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
 
     const observer = new IntersectionObserver(
@@ -51,6 +52,7 @@ export default function App() {
         <InfoBar />
         <About />
         <DesignClients onSelectProject={(project) => setSelectedProject(project)} />
+        <LogoDesign onSelectProject={(project) => setSelectedProject(project)} />
         <Portfolio onSelectProject={(project) => setSelectedProject(project)} />
         <Contact />
       </main>

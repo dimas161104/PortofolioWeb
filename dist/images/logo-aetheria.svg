@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <pattern id="aeth-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#D8D4CC" stroke-width="0.8" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="600" height="450" fill="#F4F2ED"/>
+  <rect width="600" height="450" fill="url(#aeth-grid)"/>
+
+  <!-- Construction Circles & Guides -->
+  <circle cx="300" cy="180" r="110" fill="none" stroke="#D20F1B" stroke-width="0.75" stroke-dasharray="3,3" opacity="0.6"/>
+  <circle cx="300" cy="180" r="65" fill="none" stroke="#111111" stroke-width="0.75" stroke-dasharray="2,2" opacity="0.3"/>
+  <line x1="300" y1="50" x2="300" y2="310" stroke="#D20F1B" stroke-width="0.75" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="170" y1="180" x2="430" y2="180" stroke="#111111" stroke-width="0.75" stroke-dasharray="4,4" opacity="0.3"/>
+
+  <!-- Architectural Corner Crop Marks -->
+  <path d="M 40 40 L 65 40 M 40 40 L 40 65" stroke="#111111" stroke-width="1.2"/>
+  <path d="M 560 40 L 535 40 M 560 40 L 560 65" stroke="#111111" stroke-width="1.2"/>
+  <path d="M 40 410 L 65 410 M 40 410 L 40 385" stroke="#111111" stroke-width="1.2"/>
+  <path d="M 560 410 L 535 410 M 560 410 L 560 385" stroke="#111111" stroke-width="1.2"/>
+
+  <!-- Geometric Monolith Logomark "A" -->
+  <g id="logomark">
+    <!-- Left Pillar -->
+    <polygon points="300,90 324,90 236,255 198,255" fill="#111111"/>
+    <!-- Right Pillar -->
+    <polygon points="296,90 334,90 422,255 384,255" fill="#111111"/>
+    <!-- Horizontal Crossbeam -->
+    <rect x="238" y="195" width="144" height="26" fill="#D20F1B"/>
+    <!-- Central Negative Spatial Void Triangle -->
+    <polygon points="310,136 342,195 278,195" fill="#F4F2ED"/>
+  </g>
+
+  <!-- Spec Meta & Measurements -->
+  <text x="560" y="60" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#777777" text-anchor="end" letter-spacing="1.2">SYSTEM / MODULAR GRID</text>
+  <text x="40" y="60" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#D20F1B" letter-spacing="1.5">REF // A-01</text>
+
+  <!-- Wordmark Typography -->
+  <text x="300" y="340" font-family="'Inter', sans-serif" font-size="28" font-weight="900" fill="#111111" text-anchor="middle" letter-spacing="8">AETHERIA</text>
+  <text x="300" y="368" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#666666" text-anchor="middle" letter-spacing="3.5">SPATIAL &amp; ARCHITECTURAL STUDIO</text>
+  <text x="300" y="392" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="500" fill="#999999" text-anchor="middle" letter-spacing="1.5">GOLDEN RATIO 1:1.618 • MONOCHROME + SWISS RED</text>
+</svg>

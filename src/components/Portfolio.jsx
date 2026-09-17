@@ -58,7 +58,7 @@ export default function Portfolio({ onSelectProject }) {
           <div className="portfolio-title-group">
             <div className="section-label">
               <span className="dot" aria-hidden="true" />
-              <span>03 / SELECTED WORKS</span>
+              <span>04 / SELECTED WORKS</span>
             </div>
             <h2 className="editorial-heading portfolio-title">
               Curated Design &amp; Video<br />Portfolio

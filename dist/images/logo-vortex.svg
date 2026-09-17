@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <pattern id="vort-grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#252528" stroke-width="0.8" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="vort-red-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E3B"/>
+      <stop offset="100%" stop-color="#B80D16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Obsidian Base Canvas -->
+  <rect width="600" height="450" fill="#121215"/>
+  <rect width="600" height="450" fill="url(#vort-grid)"/>
+
+  <!-- Construction Circles -->
+  <circle cx="300" cy="180" r="95" fill="none" stroke="#2C2C32" stroke-width="1"/>
+  <circle cx="300" cy="180" r="70" fill="none" stroke="#D20F1B" stroke-width="0.75" stroke-dasharray="3,3" opacity="0.5"/>
+  <circle cx="300" cy="180" r="45" fill="none" stroke="#3A3A42" stroke-width="1"/>
+
+  <!-- Technical Crosshairs -->
+  <line x1="300" y1="65" x2="300" y2="295" stroke="#2C2C32" stroke-width="0.75" stroke-dasharray="3,3"/>
+  <line x1="185" y1="180" x2="415" y2="180" stroke="#2C2C32" stroke-width="0.75" stroke-dasharray="3,3"/>
+
+  <!-- Corner Crop Marks -->
+  <path d="M 40 40 L 65 40 M 40 40 L 40 65" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <path d="M 560 40 L 535 40 M 560 40 L 560 65" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <path d="M 40 410 L 65 410 M 40 410 L 40 385" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <path d="M 560 410 L 535 410 M 560 410 L 560 385" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+
+  <!-- Kinetic Waveform Vortex Logomark -->
+  <g id="vortex-mark">
+    <!-- Outer Curve 1 -->
+    <path d="M 300 95 C 352 95 395 138 395 190 C 395 210 385 228 370 240 L 350 224 C 362 215 370 202 370 190 C 370 152 338 120 300 120 Z" fill="#FFFFFF"/>
+    <!-- Middle Blade 2 (Red Accent) -->
+    <path d="M 300 120 C 338 120 370 152 370 190 C 370 205 364 218 355 228 L 335 210 C 341 204 345 197 345 190 C 345 165 325 145 300 145 Z" fill="url(#vort-red-grad)"/>
+    <!-- Inner Counter Spiral 3 -->
+    <path d="M 300 265 C 248 265 205 222 205 170 C 205 150 215 132 230 120 L 250 136 C 238 145 230 158 230 170 C 230 208 262 240 300 240 Z" fill="#FFFFFF"/>
+    <!-- Central Core Dot -->
+    <circle cx="300" cy="180" r="10" fill="#D20F1B"/>
+    <circle cx="300" cy="180" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Spec Meta -->
+  <text x="40" y="60" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#D20F1B" letter-spacing="1.5">REF // V-02</text>
+  <text x="560" y="60" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#888892" text-anchor="end" letter-spacing="1.2">KINETIC WAVEFORM LAB</text>
+
+  <!-- Wordmark Typography -->
+  <text x="300" y="340" font-family="'Inter', sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="7">VORTEX</text>
+  <text x="300" y="368" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#D20F1B" text-anchor="middle" letter-spacing="3.5">DYNAMIC AUDIO &amp; MOTION LABS</text>
+  <text x="300" y="392" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="500" fill="#777785" text-anchor="middle" letter-spacing="1.5">HARMONIC RESONANCE 432Hz • DARK OBSIDIAN + NEON RED</text>
+</svg>
